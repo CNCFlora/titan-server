@@ -6,6 +6,16 @@ Titan+Cassandra+ElasticSearch+Rexster+Batch Vagrant & Docker.
 
 Doghouse exposed at http://192.168.50.8:8182/.
 
+## Starting titan on Vagrant
+
+    vagrant ssh
+    cd titan
+    bin/titan.sh -c cassandra-es start
+
+## Starting on docker
+
+    docker run -d -p 8182:8182 -t cncflora/titan
+
 ## REST Usage
 
 [More on the REST API](https://github.com/tinkerpop/rexster/wiki/Basic-REST-API)

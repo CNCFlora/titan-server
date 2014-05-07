@@ -2,5 +2,5 @@
 
 cd /root/titan
 bin/titan.sh -c cassandra-es start
-tail -f logs/rexstitan.log
+tail -f /root/titan/log/rexstitan.log
 
