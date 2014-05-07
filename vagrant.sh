@@ -13,7 +13,6 @@ if [[ ! -e /home/vagrant/titan ]] ; then
          -O /home/vagrant/titan/lib/batch-kibble-2.5.0.jar
     cp /vagrant/rexster-cassandra-es.xml /home/vagrant/titan/conf/rexster-cassandra-es.xml
     sed -i -e 's/localhost/192.168.50.8' /home/vagrant/titan/conf/rexster-cassandra-es.xml
-    rm titan.zip
 fi
 
 chown vagrant /home/vagrant/titan -Rf
