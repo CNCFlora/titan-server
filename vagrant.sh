@@ -12,7 +12,7 @@ if [[ ! -e /home/vagrant/titan ]] ; then
     wget http://repo1.maven.org/maven2/com/tinkerpop/rexster/rexster-kibbles/batch-kibble/2.5.0/batch-kibble-2.5.0.jar \
          -O /home/vagrant/titan/lib/batch-kibble-2.5.0.jar
     cp /vagrant/rexster-cassandra-es.xml /home/vagrant/titan/conf/rexster-cassandra-es.xml
-    sed -i -e 's/localhost/192.168.50.8' /home/vagrant/titan/conf/rexster-cassandra-es.xml
+    sed -i -e 's/localhost/192.168.50.8/' /home/vagrant/titan/conf/rexster-cassandra-es.xml
 fi
 
 chown vagrant /home/vagrant/titan -Rf

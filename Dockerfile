@@ -8,6 +8,8 @@ RUN cd /root && unzip titan.zip && mv titan-server-0.4.4 titan && rm titan.zip
 RUN wget http://repo1.maven.org/maven2/com/tinkerpop/rexster/rexster-kibbles/batch-kibble/2.5.0/batch-kibble-2.5.0.jar \
         -O /root/titan/lib/batch-kibble-2.5.0.jar
 ADD rexster-cassandra-es.xml /root/titan/conf/rexster-cassandra-es.xml
+ADD start.sh /root/start.sh
+RUN chmod +x /root/start.sh
 
 EXPOSE 8182
 
